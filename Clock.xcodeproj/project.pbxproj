@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		593D647614717B1C00486662 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593D647514717B1C00486662 /* UIKit.framework */; };
+		593D647814717B1C00486662 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593D647714717B1C00486662 /* Foundation.framework */; };
+		593D647A14717B1C00486662 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593D647914717B1C00486662 /* CoreGraphics.framework */; };
+		593D648014717B1C00486662 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 593D647E14717B1C00486662 /* InfoPlist.strings */; };
+		593D648214717B1C00486662 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D648114717B1C00486662 /* main.m */; };
+		593D648614717B1C00486662 /* ClockAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D648514717B1C00486662 /* ClockAppDelegate.m */; };
+		593D648914717B1C00486662 /* ClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 593D648814717B1C00486662 /* ClockViewController.m */; };
+		593D648C14717B1C00486662 /* ClockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 593D648A14717B1C00486662 /* ClockViewController.xib */; };
+		593D64A114717B9900486662 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649314717B9900486662 /* Background.png */; };
+		593D64A214717B9900486662 /* Background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649414717B9900486662 /* Background@2x.png */; };
+		593D64A314717B9900486662 /* img-alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649514717B9900486662 /* img-alarm.png */; };
+		593D64A414717B9900486662 /* img-alarm@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649614717B9900486662 /* img-alarm@2x.png */; };
+		593D64A514717B9900486662 /* img-center.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649714717B9900486662 /* img-center.png */; };
+		593D64A614717B9900486662 /* img-center@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649814717B9900486662 /* img-center@2x.png */; };
+		593D64A714717B9900486662 /* img-glare.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649914717B9900486662 /* img-glare.png */; };
+		593D64A814717B9900486662 /* img-glare@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649A14717B9900486662 /* img-glare@2x.png */; };
+		593D64A914717B9900486662 /* img-hour.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649B14717B9900486662 /* img-hour.png */; };
+		593D64AA14717B9900486662 /* img-hour@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649C14717B9900486662 /* img-hour@2x.png */; };
+		593D64AB14717B9900486662 /* img-minutes.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649D14717B9900486662 /* img-minutes.png */; };
+		593D64AC14717B9900486662 /* img-minutes@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649E14717B9900486662 /* img-minutes@2x.png */; };
+		593D64AD14717B9900486662 /* img-second.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D649F14717B9900486662 /* img-second.png */; };
+		593D64AE14717B9900486662 /* img-second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D64A014717B9900486662 /* img-second@2x.png */; };
+		593D64B114719DAC00486662 /* alarm.caf in Resources */ = {isa = PBXBuildFile; fileRef = 593D64B014719DAC00486662 /* alarm.caf */; };
+		593D64B314719E5400486662 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 593D64B214719E5300486662 /* AVFoundation.framework */; };
+		593D64B91471ACAB00486662 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D64B81471ACAB00486662 /* icon.png */; };
+		593D64BB1471ACB900486662 /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 593D64BA1471ACB900486662 /* icon@2x.png */; };
+		594BFF1314722D1000C0EEE3 /* btn-alarmEnabled-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF0F14722D0F00C0EEE3 /* btn-alarmEnabled-selected.png */; };
+		594BFF1414722D1000C0EEE3 /* btn-alarmEnabled-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF1014722D0F00C0EEE3 /* btn-alarmEnabled-selected@2x.png */; };
+		594BFF1514722D1000C0EEE3 /* btn-alarmEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF1114722D0F00C0EEE3 /* btn-alarmEnabled.png */; };
+		594BFF1614722D1000C0EEE3 /* btn-alarmEnabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF1214722D0F00C0EEE3 /* btn-alarmEnabled@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		593D647114717B1C00486662 /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		593D647514717B1C00486662 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		593D647714717B1C00486662 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		593D647914717B1C00486662 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		593D647D14717B1C00486662 /* Clock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Clock-Info.plist"; sourceTree = "<group>"; };
+		593D647F14717B1C00486662 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		593D648114717B1C00486662 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		593D648314717B1C00486662 /* Clock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Clock-Prefix.pch"; sourceTree = "<group>"; };
+		593D648414717B1C00486662 /* ClockAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockAppDelegate.h; sourceTree = "<group>"; };
+		593D648514717B1C00486662 /* ClockAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockAppDelegate.m; sourceTree = "<group>"; };
+		593D648714717B1C00486662 /* ClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClockViewController.h; sourceTree = "<group>"; };
+		593D648814717B1C00486662 /* ClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockViewController.m; sourceTree = "<group>"; };
+		593D648B14717B1C00486662 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ClockViewController.xib; sourceTree = "<group>"; };
+		593D649314717B9900486662 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		593D649414717B9900486662 /* Background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Background@2x.png"; sourceTree = "<group>"; };
+		593D649514717B9900486662 /* img-alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-alarm.png"; sourceTree = "<group>"; };
+		593D649614717B9900486662 /* img-alarm@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-alarm@2x.png"; sourceTree = "<group>"; };
+		593D649714717B9900486662 /* img-center.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-center.png"; sourceTree = "<group>"; };
+		593D649814717B9900486662 /* img-center@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-center@2x.png"; sourceTree = "<group>"; };
+		593D649914717B9900486662 /* img-glare.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-glare.png"; sourceTree = "<group>"; };
+		593D649A14717B9900486662 /* img-glare@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-glare@2x.png"; sourceTree = "<group>"; };
+		593D649B14717B9900486662 /* img-hour.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-hour.png"; sourceTree = "<group>"; };
+		593D649C14717B9900486662 /* img-hour@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-hour@2x.png"; sourceTree = "<group>"; };
+		593D649D14717B9900486662 /* img-minutes.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-minutes.png"; sourceTree = "<group>"; };
+		593D649E14717B9900486662 /* img-minutes@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-minutes@2x.png"; sourceTree = "<group>"; };
+		593D649F14717B9900486662 /* img-second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-second.png"; sourceTree = "<group>"; };
+		593D64A014717B9900486662 /* img-second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "img-second@2x.png"; sourceTree = "<group>"; };
+		593D64B014719DAC00486662 /* alarm.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alarm.caf; sourceTree = "<group>"; };
+		593D64B214719E5300486662 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		593D64B81471ACAB00486662 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		593D64BA1471ACB900486662 /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+		594BFF0F14722D0F00C0EEE3 /* btn-alarmEnabled-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled-selected.png"; sourceTree = "<group>"; };
+		594BFF1014722D0F00C0EEE3 /* btn-alarmEnabled-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled-selected@2x.png"; sourceTree = "<group>"; };
+		594BFF1114722D0F00C0EEE3 /* btn-alarmEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled.png"; sourceTree = "<group>"; };
+		594BFF1214722D0F00C0EEE3 /* btn-alarmEnabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		593D646E14717B1C00486662 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593D64B314719E5400486662 /* AVFoundation.framework in Frameworks */,
+				593D647614717B1C00486662 /* UIKit.framework in Frameworks */,
+				593D647814717B1C00486662 /* Foundation.framework in Frameworks */,
+				593D647A14717B1C00486662 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		593D646614717B1C00486662 = {
+			isa = PBXGroup;
+			children = (
+				593D64BA1471ACB900486662 /* icon@2x.png */,
+				593D64B81471ACAB00486662 /* icon.png */,
+				593D647B14717B1C00486662 /* Clock */,
+				593D647414717B1C00486662 /* Frameworks */,
+				593D647214717B1C00486662 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		593D647214717B1C00486662 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				593D647114717B1C00486662 /* Clock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		593D647414717B1C00486662 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				593D64B214719E5300486662 /* AVFoundation.framework */,
+				593D647514717B1C00486662 /* UIKit.framework */,
+				593D647714717B1C00486662 /* Foundation.framework */,
+				593D647914717B1C00486662 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		593D647B14717B1C00486662 /* Clock */ = {
+			isa = PBXGroup;
+			children = (
+				593D648414717B1C00486662 /* ClockAppDelegate.h */,
+				593D648514717B1C00486662 /* ClockAppDelegate.m */,
+				593D648714717B1C00486662 /* ClockViewController.h */,
+				593D648814717B1C00486662 /* ClockViewController.m */,
+				593D648A14717B1C00486662 /* ClockViewController.xib */,
+				593D647C14717B1C00486662 /* Supporting Files */,
+			);
+			path = Clock;
+			sourceTree = "<group>";
+		};
+		593D647C14717B1C00486662 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				593D64AF14719DAC00486662 /* sounds */,
+				593D649214717B9900486662 /* images */,
+				593D647D14717B1C00486662 /* Clock-Info.plist */,
+				593D647E14717B1C00486662 /* InfoPlist.strings */,
+				593D648114717B1C00486662 /* main.m */,
+				593D648314717B1C00486662 /* Clock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		593D649214717B9900486662 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				594BFF0F14722D0F00C0EEE3 /* btn-alarmEnabled-selected.png */,
+				594BFF1014722D0F00C0EEE3 /* btn-alarmEnabled-selected@2x.png */,
+				594BFF1114722D0F00C0EEE3 /* btn-alarmEnabled.png */,
+				594BFF1214722D0F00C0EEE3 /* btn-alarmEnabled@2x.png */,
+				593D649314717B9900486662 /* Background.png */,
+				593D649414717B9900486662 /* Background@2x.png */,
+				593D649514717B9900486662 /* img-alarm.png */,
+				593D649614717B9900486662 /* img-alarm@2x.png */,
+				593D649714717B9900486662 /* img-center.png */,
+				593D649814717B9900486662 /* img-center@2x.png */,
+				593D649914717B9900486662 /* img-glare.png */,
+				593D649A14717B9900486662 /* img-glare@2x.png */,
+				593D649B14717B9900486662 /* img-hour.png */,
+				593D649C14717B9900486662 /* img-hour@2x.png */,
+				593D649D14717B9900486662 /* img-minutes.png */,
+				593D649E14717B9900486662 /* img-minutes@2x.png */,
+				593D649F14717B9900486662 /* img-second.png */,
+				593D64A014717B9900486662 /* img-second@2x.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		593D64AF14719DAC00486662 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				593D64B014719DAC00486662 /* alarm.caf */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		593D647014717B1C00486662 /* Clock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 593D648F14717B1C00486662 /* Build configuration list for PBXNativeTarget "Clock" */;
+			buildPhases = (
+				593D646D14717B1C00486662 /* Sources */,
+				593D646E14717B1C00486662 /* Frameworks */,
+				593D646F14717B1C00486662 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Clock;
+			productName = Clock;
+			productReference = 593D647114717B1C00486662 /* Clock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		593D646814717B1C00486662 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+				ORGANIZATIONNAME = "東京";
+			};
+			buildConfigurationList = 593D646B14717B1C00486662 /* Build configuration list for PBXProject "Clock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 593D646614717B1C00486662;
+			productRefGroup = 593D647214717B1C00486662 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				593D647014717B1C00486662 /* Clock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		593D646F14717B1C00486662 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593D648014717B1C00486662 /* InfoPlist.strings in Resources */,
+				593D648C14717B1C00486662 /* ClockViewController.xib in Resources */,
+				593D64A114717B9900486662 /* Background.png in Resources */,
+				593D64A214717B9900486662 /* Background@2x.png in Resources */,
+				593D64A314717B9900486662 /* img-alarm.png in Resources */,
+				593D64A414717B9900486662 /* img-alarm@2x.png in Resources */,
+				593D64A514717B9900486662 /* img-center.png in Resources */,
+				593D64A614717B9900486662 /* img-center@2x.png in Resources */,
+				593D64A714717B9900486662 /* img-glare.png in Resources */,
+				593D64A814717B9900486662 /* img-glare@2x.png in Resources */,
+				593D64A914717B9900486662 /* img-hour.png in Resources */,
+				593D64AA14717B9900486662 /* img-hour@2x.png in Resources */,
+				593D64AB14717B9900486662 /* img-minutes.png in Resources */,
+				593D64AC14717B9900486662 /* img-minutes@2x.png in Resources */,
+				593D64AD14717B9900486662 /* img-second.png in Resources */,
+				593D64AE14717B9900486662 /* img-second@2x.png in Resources */,
+				593D64B114719DAC00486662 /* alarm.caf in Resources */,
+				593D64B91471ACAB00486662 /* icon.png in Resources */,
+				593D64BB1471ACB900486662 /* icon@2x.png in Resources */,
+				594BFF1314722D1000C0EEE3 /* btn-alarmEnabled-selected.png in Resources */,
+				594BFF1414722D1000C0EEE3 /* btn-alarmEnabled-selected@2x.png in Resources */,
+				594BFF1514722D1000C0EEE3 /* btn-alarmEnabled.png in Resources */,
+				594BFF1614722D1000C0EEE3 /* btn-alarmEnabled@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		593D646D14717B1C00486662 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				593D648214717B1C00486662 /* main.m in Sources */,
+				593D648614717B1C00486662 /* ClockAppDelegate.m in Sources */,
+				593D648914717B1C00486662 /* ClockViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		593D647E14717B1C00486662 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				593D647F14717B1C00486662 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		593D648A14717B1C00486662 /* ClockViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				593D648B14717B1C00486662 /* en */,
+			);
+			name = ClockViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		593D648D14717B1C00486662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		593D648E14717B1C00486662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		593D649014717B1C00486662 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock/Clock-Prefix.pch";
+				INFOPLIST_FILE = "Clock/Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		593D649114717B1C00486662 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Clock/Clock-Prefix.pch";
+				INFOPLIST_FILE = "Clock/Clock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		593D646B14717B1C00486662 /* Build configuration list for PBXProject "Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593D648D14717B1C00486662 /* Debug */,
+				593D648E14717B1C00486662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		593D648F14717B1C00486662 /* Build configuration list for PBXNativeTarget "Clock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				593D649014717B1C00486662 /* Debug */,
+				593D649114717B1C00486662 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 593D646814717B1C00486662 /* Project object */;
+}
