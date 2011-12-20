@@ -58,12 +58,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+        
     //self.view.autoresizesSubviews = NO; //avoid squashed imgView
     
 	// タイマーの作成（動作開始）
     [NSTimer scheduledTimerWithTimeInterval:1.0 //間隔
-                                     target:self //呼び出すオブジェクト    
+                                     target:self //呼び出すオブジェクト
                                    selector:@selector(driveClock:) //呼び出すメソッド
                                    userInfo:nil //ユーザ利用の情報オブジェクト
                                     repeats:YES];
@@ -91,6 +91,12 @@
     
     //ユーザ・デフォルトによる設定
     [self setAlarmItems];
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.8];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    [self driveClock:nil];
+    [UIView commitAnimations];
 }
 
 - (void)viewDidUnload
@@ -166,6 +172,11 @@
 //------------------------------------------------------------//
 
 //------------------------------------------------------------//
+
+
+//------------------------------------------------------------//
+
+//------------------------------------------------------------//
 //タイマーから呼び出されるメソッド
 - (void)driveClock:(NSTimer *)timer{
     //タイマー動作時の処理
@@ -197,6 +208,7 @@
     // @"出力したい内容を記述"
     NSLog(@"sec: %d ", sec);  //秒
     NSLog(@"angle: %d ", sec * 6); //角度
+
     //アラームの処理
     if (alarmEnabled) {
         float difference = fineHour - alarmHour;
