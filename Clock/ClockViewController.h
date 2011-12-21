@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <AVFoundation/AVAudioPlayer.h>
+#import <CoreLocation/CoreLocation.h>
 
 #define kAlarmEnableKey @"alarmEnabled"
 #define KAlarmHourKey @"alarmHour"
@@ -22,6 +23,10 @@ AVAudioPlayer *alarmPlayer; //アラーム音の再生プレーヤ
     UIImageView *minuteHand;
     UIImageView *secondHand;
     UIButton *alarmButton;
+    UIButton *startButton;
+    UIButton *stopButton;
+    UILabel *locationLabel;
+    CLLocationManager *maneger;
 }
 
 @property (retain, nonatomic) IBOutlet UIImageView *alarmHand;
@@ -29,6 +34,12 @@ AVAudioPlayer *alarmPlayer; //アラーム音の再生プレーヤ
 @property (retain, nonatomic) IBOutlet UIImageView *minuteHand;
 @property (retain, nonatomic) IBOutlet UIImageView *secondHand;
 @property (retain, nonatomic) IBOutlet UIButton *alarmButton;
+@property (retain, nonatomic) IBOutlet UIButton *startButton;
+@property (retain, nonatomic) IBOutlet UIButton *stopButton;
+
+@property (retain, nonatomic) IBOutlet UILabel *locationLabel;
+
+
 
 - (IBAction)toggleAlarmButton;
 
@@ -37,5 +48,9 @@ AVAudioPlayer *alarmPlayer; //アラーム音の再生プレーヤ
 - (void)saveUserDefaults;
 
 - (IBAction)moveAlarmHand:(id)sender forEvent:(UIEvent *)event;
+
+- (IBAction) start : (id) sender;
+
+- (IBAction) stop : (id) sender;
 
 @end

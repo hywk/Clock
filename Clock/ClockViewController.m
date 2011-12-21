@@ -14,6 +14,9 @@
 @synthesize minuteHand;
 @synthesize secondHand;
 @synthesize alarmButton;
+@synthesize startButton;
+@synthesize stopButton;
+@synthesize locationLabel;
 
 - (void)didReceiveMemoryWarning
 {
@@ -151,6 +154,9 @@
     [minuteHand release];
     [secondHand release];
     [alarmButton release];
+    [startButton release];
+    [stopButton release];
+    [locationLabel release];
     [super dealloc];
 }
 
@@ -238,6 +244,22 @@
     //アラーム状態がオフであれば、アラームを停止
     if (alarmEnabled == NO)
         [alarmPlayer stop];
+}
+
+//------------------------------------------------------------//
+
+//------------------------------------------------------------//
+//startボタンがタップされた時に呼び出されるメソッド
+- (IBAction) start : (id) sender {
+    NSLog(@"STARTボタンおした");
+
+}
+//------------------------------------------------------------//
+
+//------------------------------------------------------------//
+//stopボタンがタップされた時に呼び出されるメソッド
+- (IBAction) stop : (id) sender {
+    NSLog(@"STOPボタンおした");  
 }
 
 //------------------------------------------------------------//

@@ -37,6 +37,7 @@
 		594BFF1414722D1000C0EEE3 /* btn-alarmEnabled-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF1014722D0F00C0EEE3 /* btn-alarmEnabled-selected@2x.png */; };
 		594BFF1514722D1000C0EEE3 /* btn-alarmEnabled.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF1114722D0F00C0EEE3 /* btn-alarmEnabled.png */; };
 		594BFF1614722D1000C0EEE3 /* btn-alarmEnabled@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 594BFF1214722D0F00C0EEE3 /* btn-alarmEnabled@2x.png */; };
+		59A4970F14A0D3D5006A7FC4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59A4970E14A0D3D5006A7FC4 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -75,6 +76,7 @@
 		594BFF1014722D0F00C0EEE3 /* btn-alarmEnabled-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled-selected@2x.png"; sourceTree = "<group>"; };
 		594BFF1114722D0F00C0EEE3 /* btn-alarmEnabled.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled.png"; sourceTree = "<group>"; };
 		594BFF1214722D0F00C0EEE3 /* btn-alarmEnabled@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "btn-alarmEnabled@2x.png"; sourceTree = "<group>"; };
+		59A4970E14A0D3D5006A7FC4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				59A4970F14A0D3D5006A7FC4 /* CoreLocation.framework in Frameworks */,
 				593D64B314719E5400486662 /* AVFoundation.framework in Frameworks */,
 				593D647614717B1C00486662 /* UIKit.framework in Frameworks */,
 				593D647814717B1C00486662 /* Foundation.framework in Frameworks */,
@@ -114,6 +117,7 @@
 		593D647414717B1C00486662 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				59A4970E14A0D3D5006A7FC4 /* CoreLocation.framework */,
 				593D64B214719E5300486662 /* AVFoundation.framework */,
 				593D647514717B1C00486662 /* UIKit.framework */,
 				593D647714717B1C00486662 /* Foundation.framework */,
